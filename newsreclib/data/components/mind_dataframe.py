@@ -158,7 +158,7 @@ class MINDDataFrame(Dataset):
                     pretrained_embeddings_fpath=word_embeddings_fpath,
                     filename=pretrained_embeddings_url.split("/")[-1],
                     dst_dir=os.path.join(self.data_dir, word_embeddings_dirname),
-                    clean_archive=True,
+                    clean_archive=False,
                 )
 
         self.word_embeddings_fpath = word_embeddings_fpath

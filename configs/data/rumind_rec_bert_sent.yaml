@@ -1,0 +1,7 @@
+defaults:
+  - rumind_rec.yaml
+
+sentiment_annotator:
+  _target_: newsreclib.data.components.sentiment_annotator.BERTSentimentAnnotator
+  model_name: "MonoHime/rubert-base-cased-sentiment-new"
+  tokenizer_max_len: 96

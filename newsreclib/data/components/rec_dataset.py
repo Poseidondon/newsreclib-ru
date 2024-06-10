@@ -47,6 +47,8 @@ class RecommendationDatasetTrain(MINDDataFrame):
         candidates = np.array(bhv["candidates"])
         labels = np.array(bhv["labels"])
 
+        print(candidates)
+        print(labels)
         candidates, labels = self._sample_candidates(candidates, labels)
 
         history = self.news.loc[history]

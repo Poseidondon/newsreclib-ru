@@ -22,7 +22,7 @@ data:
 
 model:
   use_plm: False
-  pretrained_embeddings_path: ${paths.data_dir}MINDweb_train/transformed_word_embeddings.npy
+  pretrained_embeddings_path: ${paths.data_dir}MINDcombined_train/transformed_word_embeddings.npy
   embed_dim: 300
   num_heads: 15
   query_dim: 200

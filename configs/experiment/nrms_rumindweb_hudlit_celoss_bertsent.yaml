@@ -18,7 +18,7 @@ tags: ["nrms", "rumind", "pretrainedemb", "celoss", "bertsent", "hudlit"]
 seed: 42
 
 data:
-  dataset_size: "web"
+  dataset_size: "combined"
 
 model:
   use_plm: False

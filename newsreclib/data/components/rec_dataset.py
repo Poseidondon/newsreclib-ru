@@ -47,9 +47,11 @@ class RecommendationDatasetTrain(MINDDataFrame):
         candidates = np.array(bhv["candidates"])
         labels = np.array(bhv["labels"])
 
-        print(candidates)
-        print(labels)
-        candidates, labels = self._sample_candidates(candidates, labels)
+        try:
+            candidates, labels = self._sample_candidates(candidates, labels)
+        except Exception:
+            print('Candidates:', candidates)
+            print('Labels:', labels)
 
         history = self.news.loc[history]
         candidates = self.news.loc[candidates]

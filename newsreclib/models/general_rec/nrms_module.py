@@ -228,11 +228,6 @@ class NRMSModule(AbstractRecommneder):
         self.test_sent_pers_metrics = sent_pers_metrics.clone(prefix="test/")
 
     def forward(self, batch: RecommendationBatch) -> torch.Tensor:
-        print('x_hist', batch["x_hist"])
-        print('batch_hist', batch["batch_hist"])
-        print('x_cand', batch["x_cand"])
-        print('batch_cand', batch["batch_cand"])
-
         # encode history
         hist_news_vector = self.news_encoder(batch["x_hist"])
         hist_news_vector_agg, mask_hist = to_dense_batch(hist_news_vector, batch["batch_hist"])

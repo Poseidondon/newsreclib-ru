@@ -97,6 +97,10 @@ class RecommendationDatasetTrain(MINDDataFrame):
 
 class RecommendationDatasetTest(MINDDataFrame):
     def __init__(self, news: pd.DataFrame, behaviors: pd.DataFrame, max_history_len: int) -> None:
+        print('news', news)
+        print('behaviors', behaviors)
+        print('max_history_len', max_history_len)
+
         self.news = news
         self.behaviors = behaviors
         self.max_history_len = max_history_len

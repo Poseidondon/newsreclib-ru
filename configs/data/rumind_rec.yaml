@@ -52,7 +52,7 @@ entity_conf_threshold: 0.5
 
 sentiment_annotator: null
 
-valid_time_split: "2024-05-31 22:14:05" # interactions with timestamp before this data will be used for training
+valid_time_split: "2024-06-11 11:32:41" # interactions with timestamp before this data will be used for training
 
 # dataset settings
 neg_sampling_ratio: 4

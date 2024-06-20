@@ -30,10 +30,10 @@ model:
 
 callbacks:
   early_stopping:
-    patience: 5
+    patience: 10
 
 trainer:
-  max_epochs: 20
+  max_epochs: 30
 
 logger:
   wandb:

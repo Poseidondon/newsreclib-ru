@@ -3,5 +3,7 @@ defaults:
 
 sentiment_annotator:
   _target_: newsreclib.data.components.sentiment_annotator.BERTSentimentAnnotator
-  model_name: "MonoHime/rubert-base-cased-sentiment-new"
+  # model_name: "MonoHime/rubert-base-cased-sentiment-new"    # 712 MB
+  # model_name: "seara/rubert-tiny2-russian-sentiment"        # 117 MB
+  model_name: "cointegrated/rubert-tiny-sentiment-balanced"   # 47 MB
   tokenizer_max_len: 96

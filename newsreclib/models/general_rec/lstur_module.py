@@ -170,10 +170,10 @@ class LSTURModule(AbstractRecommneder):
             )
 
         # initialize category encoder
-        import logging
-        logger = logging.getLogger(__name__)
-        logger.info('num_categories:', self.num_categ_classes)
-        logger.info('embed_dim:', self.hparams.categ_embed_dim)
+        assert False, f"""
+        num_categories: {self.num_categ_classes}
+        embed_dim: {self.hparams.categ_embed_dim}
+        """
         category_encoder = LinearEncoder(
             pretrained_embeddings=None,
             from_pretrained=False,

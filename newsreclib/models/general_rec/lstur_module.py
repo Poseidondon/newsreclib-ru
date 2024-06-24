@@ -170,8 +170,9 @@ class LSTURModule(AbstractRecommneder):
             )
 
         # initialize category encoder
-        print('num_categories:', self.num_categ_classes)
-        print('embed_dim:', self.hparams.categ_embed_dim)
+        import wandb
+        wandb.log('num_categories:', self.num_categ_classes)
+        wandb.log('embed_dim:', self.hparams.categ_embed_dim)
         category_encoder = LinearEncoder(
             pretrained_embeddings=None,
             from_pretrained=False,

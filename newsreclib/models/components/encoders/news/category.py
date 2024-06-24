@@ -42,8 +42,6 @@ class LinearEncoder(nn.Module):
         output_dim: Optional[int],
     ) -> None:
         super().__init__()
-        print('num_categories:', num_categories)
-        print('pretrained_embeddings:', pretrained_embeddings)
 
         if from_pretrained:
             assert isinstance(pretrained_embeddings, torch.Tensor)
@@ -73,8 +71,6 @@ class LinearEncoder(nn.Module):
             self.linear = nn.Linear(in_features=embed_dim, out_features=output_dim)
 
     def forward(self, category: torch.Tensor) -> torch.Tensor:
-        print('category:', category)
-        print('self.embedding_layer:', self.embedding_layer)
         category_vector = self.embedding_layer(category)
 
         if self.use_dropout:

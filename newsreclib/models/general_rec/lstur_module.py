@@ -170,10 +170,6 @@ class LSTURModule(AbstractRecommneder):
             )
 
         # initialize category encoder
-        assert False, f"""
-        num_categories: {self.num_categ_classes}
-        embed_dim: {self.hparams.categ_embed_dim}
-        """
         category_encoder = LinearEncoder(
             pretrained_embeddings=None,
             from_pretrained=False,

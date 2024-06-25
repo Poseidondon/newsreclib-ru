@@ -21,7 +21,7 @@ data:
   dataset_size: "combined"
 
 model:
-  late_fusion: True
+  loss: "sup_con_loss"
   num_categ_classes: 25
   use_plm: False
   pretrained_embeddings_path: ${paths.data_dir}MINDcombined_train/transformed_word_embeddings.npy

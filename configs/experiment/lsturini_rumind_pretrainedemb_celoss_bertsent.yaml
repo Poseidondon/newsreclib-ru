@@ -21,7 +21,6 @@ data:
   dataset_size: "combined"
 
 model:
-  loss: "sup_con_loss"
   num_categ_classes: 25
   use_plm: False
   pretrained_embeddings_path: ${paths.data_dir}MINDcombined_train/transformed_word_embeddings.npy
@@ -39,7 +38,7 @@ callbacks:
     patience: 10
 
 trainer:
-  max_epochs: 30
+  max_epochs: 15
 
 logger:
   wandb:

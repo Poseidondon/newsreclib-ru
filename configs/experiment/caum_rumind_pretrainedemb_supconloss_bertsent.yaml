@@ -21,6 +21,7 @@ data:
   dataset_size: "combined"
 
 model:
+  loss: "sup_con_loss"
   num_categ_classes: 25
   use_plm: False
   attributes2encode: ["title", "category"]

@@ -57,7 +57,7 @@ valid_time_split: "2024-06-13 08:24:26" # interactions with timestamp before thi
 # dataset settings
 neg_sampling_ratio: 4
 max_title_len: 50
-max_abstract_len: 150
+max_abstract_len: 100
 max_history_len: 50
 concatenate_inputs: False
 tokenizer_name: null

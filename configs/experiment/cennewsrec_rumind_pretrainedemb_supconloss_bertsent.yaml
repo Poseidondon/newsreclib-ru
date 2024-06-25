@@ -34,7 +34,7 @@ model:
 
 callbacks:
   early_stopping:
-    patience: 5
+    patience: 10
 
 trainer:
   max_epochs: 20

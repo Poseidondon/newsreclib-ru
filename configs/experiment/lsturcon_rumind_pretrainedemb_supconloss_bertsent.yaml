@@ -22,7 +22,7 @@ data:
 
 model:
   loss: "sup_con_loss"
-  num_categ_classes: 26
+  num_categ_classes: 28
   use_plm: False
   pretrained_embeddings_path: ${paths.data_dir}MINDcombined_train/transformed_word_embeddings.npy
   text_embed_dim: 300
@@ -31,7 +31,7 @@ model:
   window_size: 3
   query_dim: 200
   dropout_probability: 0.2
-  num_users: 134
+  num_users: 133
   long_short_term_method: "con" # choose between "ini" and "con"
 
 callbacks:

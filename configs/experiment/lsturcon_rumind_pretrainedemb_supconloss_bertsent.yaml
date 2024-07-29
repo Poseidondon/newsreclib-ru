@@ -22,7 +22,7 @@ data:
 
 model:
   loss: "sup_con_loss"
-  num_categ_classes: 25
+  num_categ_classes: 26
   use_plm: False
   pretrained_embeddings_path: ${paths.data_dir}MINDcombined_train/transformed_word_embeddings.npy
   text_embed_dim: 300

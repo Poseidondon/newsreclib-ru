@@ -31,7 +31,7 @@ model:
   window_size: 3
   query_dim: 200
   dropout_probability: 0.2
-  num_users: 133
+  num_users: 176
   long_short_term_method: "con" # choose between "ini" and "con"
 
 callbacks:
